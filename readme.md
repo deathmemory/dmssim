@@ -4,6 +4,9 @@
 
 # 安装依赖环境
 
+1. 本程序在 [python3](https://www.python.org/downloads/) 环境下测试通过。
+2. 安装依赖库
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -11,7 +14,7 @@ pip install -r requirements.txt
 # 使用
 
 ```bash
-./ssim.py <pic_dir>
+python3 ssim.py <pic_dir>
 ```
 
 相似的图片会移动到 `<pic_dir>/reps` 目录下
