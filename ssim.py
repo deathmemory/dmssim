@@ -1,3 +1,5 @@
+import sys
+
 from picsimcheck import *
 from filemd5 import *
 import os
@@ -57,10 +59,17 @@ def do_work_directory(dir_path, moverepic=True):
     return imgs_n
 
 
-if __name__ == '__main__':
+def test():
     # p1 = "pics/5.jpeg"
     # p2 = "pics/5_1.jpeg"
     # compare_pics(p1, p2)
 
     do_work_directory("pics")
+
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print(f"usage:\n\t{sys.argv[0]} <pic_dir>")
+    else:
+        do_work_directory(sys.argv[1])
     pass
