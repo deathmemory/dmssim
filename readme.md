@@ -2,6 +2,12 @@
 
 主入口 `ssim.py`
 
+# 安装依赖环境
+
+```bash
+pip install -r requirements.txt
+```
+
 # 使用
 
 ```bash
