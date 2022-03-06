@@ -13,8 +13,12 @@ pip install -r requirements.txt
 
 # 使用
 
-```bash
-python3 ssim.py <pic_dir>
+```
+usage:
+	1. 识别指定文件夹中的相似图片
+		python3 ssim.py <pic_dir>
+	2. 识别新增图片文件夹中与已去重文件夹的相似图片
+		python3 ssim.py <new_pic_dir> <old_pic_dir>
 ```
 
 相似的图片会移动到 `<pic_dir>/reps` 目录下
